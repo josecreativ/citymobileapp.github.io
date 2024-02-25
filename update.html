@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software Update</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .update-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .update-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .please-hold {
+    font-size: 18px;
+    color: #999;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+  }
+  @keyframes pulse {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="update-container">
+  <div class="update-text">Software Updating</div>
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+  <div class="please-hold">Please hold...</div>
+</div>
+
+</body>
+</html>
+
